@@ -9,6 +9,7 @@
     "ex1": "concurrently 'cross-env PORT=3001 node 1-helloworld' 'npm run pause && curl http://localhost:3001 -v'",
     "ex2": "concurrently 'node 2-staticfile' 'npm run pause && open http://localhost:3002 && curl http://localhost:3002/style.css'",
     "ex3": "concurrently 'node 3-querystring' 'npm run pause && curl -X GET \"http://localhost:3003/add?a=1&b=2\" -v'",
+    "ex4": "concurrently 'node 4-restapi' 'npm run pause && curl http://localhost:3004/api/users && curl http://localhost:3004/api/users/1'",
     "pause": "sleep 3 #on_win_use_pause"
   },
   "repository": {

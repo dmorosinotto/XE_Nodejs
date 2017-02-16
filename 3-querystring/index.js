@@ -2,8 +2,9 @@ var express = require("express");
 var app = express();
 
 app.get("/add", (req, res)=>{
-    //console.log(req.query);
-    res.send(req.query.a + req.query.b);
+    var a = parseInt(req.query.a,10);
+    var b = parseInt(req.query.b,10);
+    res.end("ADD=" + (a+b));
 });
 
 app.listen(3003, ()=>"Express server running on :3003");

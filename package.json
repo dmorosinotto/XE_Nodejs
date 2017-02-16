@@ -11,6 +11,7 @@
     "ex3": "concurrently 'node 3-querystring' 'npm run pause && curl -X GET \"http://localhost:3003/add?a=1&b=2\" -v'",
     "ex4": "concurrently 'node 4-restapi' 'npm run pause && curl http://localhost:3004/api/users && curl http://localhost:3004/api/users/1'",
     "ex5": "concurrently 'cd 5-database && npm start' 'npm run pause && cd 5-database && npm test && cd ..'",
+    "ex6": "concurrently 'node 6-middleware' 'node 2-staticfile' 'npm run pause && open http://localhost:3002/callapi.html'",
     "pause": "sleep 3 #on_win_use_pause"
   },
   "repository": {

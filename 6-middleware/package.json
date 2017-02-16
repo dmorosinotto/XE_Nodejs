@@ -12,6 +12,7 @@
   "author": "Daniele Morosinotto (d.morosinotto@icloud.com)",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.1",
     "express": "^4.14.1",
     "xe-nodejs-mock": "*"
   }

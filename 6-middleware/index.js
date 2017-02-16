@@ -3,6 +3,11 @@ var app = express();
 var cors = require("cors");
 var users = require("xe-nodejs-mock")(1000);
 
+//ENABLE CORS MIDDLEWARE
+app.use(cors(/*{ //SPECIFIC CONFIGURATION
+         origin: ["http://localhost:3002"],
+         allowedHeaders: ["Content-Type", "X-Auth"]
+}*/));
 
 app.get("/api/users", function(req,res){
     res.send(users); //JSON ARRAY

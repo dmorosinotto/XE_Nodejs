@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "start": "cross-env ZERO=0 node 0-try",
-    "pause": "sleep 3 --on_win_use_pause"
+    "ex1": "concurrently 'cross-env PORT=3001 node 1-helloworld' 'npm run pause && curl http://localhost:3001 -v'",
+    "pause": "sleep 3 #on_win_use_pause"
   },
   "repository": {
     "type": "git",

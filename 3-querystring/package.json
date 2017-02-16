@@ -1,0 +1,15 @@
+{
+  "name": "3-querystring",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "curl -X GET \"http://localhost:3003/add?a=1&b=2\" -v"
+  },
+  "keywords": [],
+  "author": "Daniele Morosinotto (d.morosinotto@icloud.com)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}

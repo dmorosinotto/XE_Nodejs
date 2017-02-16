@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Call API</title>
+    <script>
+        function getCORS() {
+            var url = document.getElementById("url").value;
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', url);
+            if (document.getElementById("xauth").checked)
+                xhr.setRequestHeader("X-Auth", "my_secret");
+            xhr.onreadystatechange = function (ev) {  
+                if (xhr.readyState === 4) {  
+                    if (xhr.status === 200) {  
+                        alert("RESULT: " + xhr.responseText);
+                    } else {  
+                        alert("ERROR: " + xhr.statusText);  
+                    }  
+                }  
+            }; 
+            try {
+                xhr.send(null);
+            } catch (err) {
+                alert("ERR SEND: " + JSON.stringify(err));
+            }
+        }
+    </script>
+</head>
+<body>
+    <input id="url" value="http://localhost:3006/api/users/1" style="width:200px"/>
+    <input type="checkbox" id="xauth" />
+    <button onclick="getCORS()">CALL API CORS + X-Auth</button>
+</body>
+</html>

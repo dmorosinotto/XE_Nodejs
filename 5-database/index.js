@@ -1,8 +1,17 @@
-var db = require("./routes/customer/custdb.js");
-//db.getAll()
-//   .then(rst => console.log(rst.length, "ROWS"))
-//   .catch( e => console.error("ERR:" , e));
+var express = require("express");
+var bodyParser = require("body-parser");
+var app = express();
 
-db.getOne(30119)
-    .then( data => console.log("OK", data) )
-    .catch(console.error);
+app.use(bodyParser.json()); //JSON body parsing for all verbs: POST, PUT, DELETE, ...
+//app.use(bodyParser.urlencoded({extended: true})); //Needed only if you use FORM POST
+
+//ROUTES CONFIG using separte express.Router()
+app.use("/customer", require("./routes/customer"));
+
+process.on("unhandledRejection", (err) => {
+    console.error("Promise REJECTION:", err);
+    if (process.env.NODE_ENV === "production") delete err.stack;
+    throw new Error(err);
+});
+
+app.listen(3005, ()=>console.log("Express rest-api + database running on :3005/customer"));

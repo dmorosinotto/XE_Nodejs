@@ -8,12 +8,19 @@
   },
   "scripts": {
     "start": "env-cmd secret.env  node index.js",
+    "test": "npm run test1 && npm run pause && npm run test2 && npm run pause && npm run test3 && npm run test2 && npm run pause && npm run test4 && npm run test2",
+    "test1": "curl http://localhost:3005/customer",
+    "test2": "curl http://localhost:3005/customer/30119",
+    "test3": "curl -X PATCH -H \"Content-Type: application/json\" -d '{\"FirstName\": \"LELE\", \"Suffix\": \"JS\"}' http://localhost:3005/customer/30119",
+    "test4": "curl -X PATCH -H \"Content-Type: application/json\" -d '{\"FirstName\": \"Daniele\", \"Suffix\": null }' http://localhost:3005/customer/30119",
     "pause": "sleep 3 && echo '\n\n-----------------------------------------------------\n'"
   },
   "keywords": [],
   "author": "Daniele Morosinotto (d.morosinotto@icloud.com)",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
     "mssql": "^3.3.0"
   },
   "devDependencies": {

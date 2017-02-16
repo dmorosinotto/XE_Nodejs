@@ -1,0 +1,12 @@
+{
+  "name": "4-restapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node mock.js"
+  },
+  "keywords": [],
+  "author": "Daniele Morosinotto (d.morosinotto@icloud.com)",
+  "license": "MIT"
+}

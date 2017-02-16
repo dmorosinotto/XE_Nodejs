@@ -13,8 +13,8 @@ app.get("/api/users", function(req,res){
     res.send(users); //JSON ARRAY
 });
 
-
-app.get("/api/users/:userid", (req,res)=> {
+//USE CUSTOM MYAUTH MIDDLEWARE TO RESTRICT ACCESS TO THIS ENTRYPOINT
+app.get("/api/users/:userid", require("./myauth") , (req,res)=> {
     const id = parseInt(req.params.userid,10);
     let idx = users.findIndex( u => u.id === id );
     if (idx>=0) {

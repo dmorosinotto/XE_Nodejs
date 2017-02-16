@@ -1,0 +1,4 @@
+# ENVIRONMENT FILES
+*.env
+.npmrc
+.env-cmdrc

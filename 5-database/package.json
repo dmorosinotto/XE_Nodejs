@@ -1,0 +1,22 @@
+{
+  "name": "5-database",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "config": {
+    "sqlserver": "xedotnet.database.windows.net"
+  },
+  "scripts": {
+    "start": "env-cmd secret.env  node index.js",
+    "pause": "sleep 3 && echo '\n\n-----------------------------------------------------\n'"
+  },
+  "keywords": [],
+  "author": "Daniele Morosinotto (d.morosinotto@icloud.com)",
+  "license": "MIT",
+  "dependencies": {
+    "mssql": "^3.3.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^4.0.0"
+  }
+}

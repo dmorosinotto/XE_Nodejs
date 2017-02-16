@@ -163,7 +163,10 @@ module.exports = exports = THE_MEANING_OF_LIFE;
 [NVM](https://github.com/creationix/nvm) / [Win](https://github.com/coreybutler/nvm-windows);
 - Fast and re-producible package installer: 
 [yarn](https://yarnpkg.com/lang/en/); 
-- Node runner live-reload + loadbalancer: [nodemon](https://nodemon.io/) / [pm2](http://pm2.keymetrics.io/); 
+- Node runner live-reload + loadbalancer: 
+[nodemon](https://nodemon.io/) / [pm2](http://pm2.keymetrics.io/); 
+- Learn how to use NPM scripts cross platform: 
+[egghead](https://egghead.io/courses/how-to-use-npm-scripts-as-your-build-tool)
 - Run/interop .NET and node.js: 
 [edge.js](http://tjanczuk.github.io/edge/#/) / [JavaScriptServices](https://github.com/aspnet/JavaScriptServices) ; 
 - Typescript REPL + run node project in TS: 

@@ -1,0 +1,16 @@
+{
+  "name": "xe-nodejs-mock",
+  "version": "1.0.0",
+  "description": "XE Nodejs - Session 17-02-2017 - Mock data helper used in ex 4-6-7 with npm link",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmorosinotto/XE_Nodejs.git"
+  },
+  "keywords": [],
+  "author": "Daniele Morosinotto (d.morosinotto@icloud.com)",
+  "license": "MIT"
+}

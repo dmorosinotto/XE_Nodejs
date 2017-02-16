@@ -4,9 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node mock.js"
+    "start": "node index.js",
+    "test": "npm run test1 && npm run pause && npm run test2",
+    "test1": "curl http://localhost:3004/api/users",
+    "test2": "curl http://localhost:3004/api/users/1",
+    "pause": "sleep 3 && echo '\n\n-----------------------------------------------------\n'"
   },
   "keywords": [],
   "author": "Daniele Morosinotto (d.morosinotto@icloud.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.1",
+    "xe-nodejs-mock": "*"
+  }
 }

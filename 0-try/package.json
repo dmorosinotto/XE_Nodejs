@@ -1,0 +1,22 @@
+{
+  "name": "0-try",
+  "version": "1.0.0",
+  "description": "My first Node.js package",
+  "main": "calc.js",
+  "scripts": {
+    "test": "cross-env ZERO=0 node calc.js"
+  },
+  "keywords": [
+    "nodejs",
+    "basics",
+    "require"
+  ],
+  "author": "Daniele Morosinotto (d.morosinotto@icloud.com)",
+  "license": "MIT",
+  "dependencies": {
+    "colour.js": "^1.5.2"
+  },
+  "devDependencies": {
+    "cross-env": "^3.1.4"
+  }
+}

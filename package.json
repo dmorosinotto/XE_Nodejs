@@ -2,8 +2,10 @@
   "name": "xe_nodejs",
   "version": "1.0.0",
   "description": "XE Nodejs - Session 17-02-2017",
-  "main": "index.js",
+  "main": "0-try/calc.js",
+  "private": true,
   "scripts": {
+    "start": "cross-env ZERO=0 node 0-try",
     "pause": "sleep 3 --on_win_use_pause"
   },
   "repository": {

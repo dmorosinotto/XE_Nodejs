@@ -7,6 +7,7 @@
   "scripts": {
     "start": "cross-env ZERO=0 node 0-try",
     "ex1": "concurrently 'cross-env PORT=3001 node 1-helloworld' 'npm run pause && curl http://localhost:3001 -v'",
+    "ex2": "concurrently 'node 2-staticfile' 'sleep 3 && open http://localhost:3002 && curl http://localhost:3002/style.css'",
     "pause": "sleep 3 #on_win_use_pause"
   },
   "repository": {

@@ -9,5 +9,8 @@
   },
   "keywords": [],
   "author": "Daniele Morosinotto (d.morosinotto@icloud.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
 }

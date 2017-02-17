@@ -43,7 +43,7 @@ Node.js uses an **event-driven**, **non-blocking I/O** model
 (_ndr: [event loop](http://2014.jsconf.eu/speakers/philip-roberts-what-the-heck-is-the-event-loop-anyway.html) single thread_) 
 that makes it lightweight and efficient. 
 
-Node.js' package ecosystem, **NPM** (_ndr: 400K+ packages), 
+Node.js' package ecosystem, **NPM** (_ndr: 400K+ packages_), 
 is the largest ecosystem of open source libraries in the world.
 
 ---
@@ -152,7 +152,7 @@ module.exports = exports = THE_MEANING_OF_LIFE;
 - [3-querystring](3-querystring/index.js)
 - [4-restapi](4-restapi/index.js)
 - [5-database](5-database/routes/customer/custdb.js) [router](5-database/routes/customer/index.js)
-- [6-middleware](6-middleware/index.js) [myauth](5-database/myauth.js)
+- [6-middleware](6-middleware/index.js) [myauth](6-middleware/myauth.js)
 - [7-performance](package.json) npm test
 
 --
@@ -161,7 +161,7 @@ module.exports = exports = THE_MEANING_OF_LIFE;
 
 - Install different version of node side-by-syde:
 [NVM](https://github.com/creationix/nvm) / [Win](https://github.com/coreybutler/nvm-windows);
-- Fast and re-producible package installer: 
+- Fast and reliable package installer: 
 [yarn](https://yarnpkg.com/lang/en/); 
 - Node runner live-reload + loadbalancer: 
 [nodemon](https://nodemon.io/) / [pm2](http://pm2.keymetrics.io/); 

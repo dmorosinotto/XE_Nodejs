@@ -14,7 +14,7 @@
   "author": "Daniele Morosinotto (d.morosinotto@icloud.com)",
   "license": "MIT",
   "dependencies": {
-    "colour.js": "^1.5.2"
+    "colour": "^0.7.1"
   },
   "devDependencies": {
     "cross-env": "^3.1.4"

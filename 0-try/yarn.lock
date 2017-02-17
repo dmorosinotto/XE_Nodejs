@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-colour.js@^1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/colour.js/-/colour.js-1.5.2.tgz#7a86e3f57d2274bb2183226de65cb288c3e144b4"
+colour@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/colour/-/colour-0.7.1.tgz#9cb169917ec5d12c0736d3e8685746df1cadf778"
 
 cross-env@^3.1.4:
   version "3.1.4"
